@@ -61,9 +61,9 @@ Table 3  LSS mounting
 
 | OS | Menu item | Address |
 |----|--------|------|
-| Mac | Finder -> Connect to server... | smb://IOWA;HawkID@iowa.uiowa.edu/shared/researchdata/rdss_bhe2 |
-| Linux | File manager -> Ctrl+l | smb://IOWA;HawkID@iowa.uiowa.edu/shared/researchdata/rdss_bhe2 |
-| Windows | [Instructions](https://its.uiowa.edu/support/article/102465) | \\iowa.uiowa.edu\shared\researchdata\rdss_hawkID |
+| Mac | Finder -> Connect to server... | smb://IOWA;bhe2@lc-rs-storage17.hpc.uiowa.edu/grelab |
+| Linux | File manager -> Ctrl+l | smb://IOWA;bhe2@lc-rs-storage17.hpc.uiowa.edu/grelab |
+| Windows | [Instructions](https://its.uiowa.edu/support/article/102465) | \\lc-rs-storage17.hpc.uiowa.edu\grelab |
 
 ## Command line mount
 
@@ -72,6 +72,8 @@ In Linux / Mac OS, one can use the following command to mount LSS or RDSS
 ```bash
 # LSS
 mount -t cifs -o username=bhe2,sec=ntlm,domain=iowa //lc-rs-storage17.hpc.uiowa.edu/grelab /mnt/cifs/lss_grelab
+# RDSS
+mount -t cifs -o username=bhe2,domain=iowa //rdss.iowa.uiowa.edu/rdss_bhe2 /mnt/cifs/rdss_bhe2 # however, I don't have permission when the drive is mounted this way
 ```
 
 # How to use LSS server
