@@ -55,7 +55,9 @@ Table 2  RDSS mounting as a folder
 |----|--------|------|
 | Mac | Finder -> Connect to server... | smb://IOWA;HawkID@iowa.uiowa.edu/shared/researchdata/rdss_bhe2 |
 | Linux | File manager -> Ctrl+l | smb://IOWA;HawkID@iowa.uiowa.edu/shared/researchdata/rdss_bhe2 |
-| Windows | [Instructions](https://its.uiowa.edu/support/article/102465) | \\iowa.uiowa.edu\shared\researchdata\rdss_hawkID |
+| Windows | [Instructions](https://its.uiowa.edu/support/article/102465) | \\\\iowa.uiowa.edu\shared\researchdata\rdss_bhe2 |
+
+*replace "HawkID" with your actual HawkID, but don't change the "bhe2"s*
 
 Table 3  LSS mounting
 
@@ -63,21 +65,24 @@ Table 3  LSS mounting
 |----|--------|------|
 | Mac | Finder -> Connect to server... | smb://IOWA;bhe2@lc-rs-storage17.hpc.uiowa.edu/grelab |
 | Linux | File manager -> Ctrl+l | smb://IOWA;bhe2@lc-rs-storage17.hpc.uiowa.edu/grelab |
-| Windows | [Instructions](https://its.uiowa.edu/support/article/102465) | \\lc-rs-storage17.hpc.uiowa.edu\grelab |
+| Windows | [Instructions](https://its.uiowa.edu/support/article/102465) | \\\\lc-rs-storage17.hpc.uiowa.edu\grelab |
 
 ## Command line mount
 
 In Linux / Mac OS, one can use the following command to mount LSS or RDSS
 
 ```bash
-# LSS
-mount -t cifs -o username=bhe2,sec=ntlm,domain=iowa //lc-rs-storage17.hpc.uiowa.edu/grelab /mnt/cifs/lss_grelab
 # RDSS
-mount -t cifs -o username=bhe2,domain=iowa //rdss.iowa.uiowa.edu/rdss_bhe2 /mnt/cifs/rdss_bhe2 # however, I don't have permission when the drive is mounted this way
+mount -t cifs -o username=HawkID,domain=iowa,uid=$(id -u $(whoami)),gid=$(id -g $(whoami)) //rdss.iowa.uiowa.edu/rdss_bhe2 /mnt/cifs/rdss_bhe2 # the additional uid and gid options are required so that the cifs client knows that these are the uid and gid for the user that matches the uid and gid on the server, which can be different.
+# LSS
+mount -t cifs -o username=HawkID,sec=ntlm,domain=iowa //lc-rs-storage17.hpc.uiowa.edu/grelab /mnt/cifs/lss_grelab
 ```
 
-# How to use LSS server
+## Access on HPC
 
+Only the LSS can be accessed on HPC. It is mounted automatically under `/Shared/grelab`
+
+## FTP
 
 # FAQ
 
