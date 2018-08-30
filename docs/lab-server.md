@@ -84,6 +84,8 @@ Only the LSS can be accessed on HPC. It is mounted automatically under `/Shared/
 
 ## FTP
 
+`data.hpc.uiowa.edu` with HawkID and password. The LSS share will be automounted under `/Shared/grelab`
+
 # FAQ
 
 1. In Linux/Mac OS, is the "map as a folder" the same as "command line mount"? Where are they in the file system?
