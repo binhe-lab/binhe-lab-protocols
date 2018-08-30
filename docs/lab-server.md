@@ -73,9 +73,13 @@ In Linux / Mac OS, one can use the following command to mount LSS or RDSS
 
 ```bash
 # RDSS
+<<<<<<< HEAD
+mount -t cifs -o username=bhe2,domain=iowa,uid=$(id -u $(whoami)),gid=$(id -g $(whoami)) //rdss.iowa.uiowa.edu/rdss_bhe2 /mnt/cifs/rdss_bhe2 # the additional uid and gid options are required so that the cifs client knows that these are the uid and gid for the user that matches the uid and gid on the server, which can be different.
+=======
 mount -t cifs -o username=HawkID,domain=iowa,uid=$(id -u $(whoami)),gid=$(id -g $(whoami)) //rdss.iowa.uiowa.edu/rdss_bhe2 /mnt/cifs/rdss_bhe2 # the additional uid and gid options are required so that the cifs client knows that these are the uid and gid for the user that matches the uid and gid on the server, which can be different.
 # LSS
 mount -t cifs -o username=HawkID,sec=ntlm,domain=iowa //lc-rs-storage17.hpc.uiowa.edu/grelab /mnt/cifs/lss_grelab
+>>>>>>> 5ee1a1ffcd49a1bb00ecee7b0625d1668cb68a23
 ```
 
 ## Access on HPC
