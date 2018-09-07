@@ -60,7 +60,6 @@ LSS is mounted automatically under `/Shared/grelab`
 
 ## FTP
 
-Download a FTP client such as [FileZilla](https://filezilla-project.org/), and point to `data.hpc.uiowa.edu`, login with your HawkID credentials.
 
 # FAQ
 
