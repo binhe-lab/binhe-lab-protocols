@@ -32,8 +32,8 @@ This approach allows you to interact with the lab server as if it were an additi
 
 | OS | Menu item | Address |
 |----|--------|------|
-| Mac | Finder -> Connect to server... | smb://IOWA;bhe2@lc-rs-storage17.hpc.uiowa.edu/grelab |
-| Linux | File manager -> Ctrl+l | smb://IOWA;bhe2@lc-rs-storage17.hpc.uiowa.edu/grelab |
+| Mac | Finder -> Connect to server... | smb://IOWA;**HawkID**@lc-rs-storage17.hpc.uiowa.edu/grelab |
+| Linux | File manager -> Ctrl+l | smb://IOWA;**HawkID**@lc-rs-storage17.hpc.uiowa.edu/grelab |
 | Windows | [Instructions](https://its.uiowa.edu/support/article/102465) | \\\\lc-rs-storage17.hpc.uiowa.edu\grelab |
 
 - *replace "HawkID" with your actual HawkID*
