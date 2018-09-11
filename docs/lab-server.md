@@ -17,8 +17,7 @@ Once you join the lab, ask the [Biology IT group](mailto:biology-help-sm@uiowa.e
 The lab servers can be accessed by several means:
 
 - Map as a folder on your personal computer
-- Mount through the command line on Linux/Mac OS
-- Access on lab linux desktops or through FastX
+- Mount through the command line on Linux
 - Access on HPC (server)
 - FTP clients
     
@@ -33,15 +32,18 @@ This approach allows you to interact with the lab server as if it were an additi
 | OS | Menu item | Address |
 |----|--------|------|
 | Mac | Finder -> Connect to server... | smb://IOWA;**HawkID**@lc-rs-storage17.hpc.uiowa.edu/grelab |
-| Linux | File manager -> Ctrl+l | smb://IOWA;**HawkID**@lc-rs-storage17.hpc.uiowa.edu/grelab |
 | Windows | [Instructions](https://its.uiowa.edu/support/article/102465) | \\\\lc-rs-storage17.hpc.uiowa.edu\grelab |
+| Linux<sup>1</sup> | File manager -> Ctrl+l | smb://IOWA;**HawkID**@lc-rs-storage17.hpc.uiowa.edu/grelab |
 
+- *1 For linux users, the command line usage is preferred*
 - *replace "HawkID" with your actual HawkID*
 - *Note that if you are off campus, you may need to be connected to the VPN client in order to gain access. Follow the instructions on this [article](https://its.uiowa.edu/support/article/1876)*
 
 ## Command line mounting
 
-In Linux / Mac OS, one can use the following command to mount LSS
+_Note: If you use one of the lab provided linux desktops, once you log in, use the command line to navigate to `/mnt/nfs/lss_grelab`, and you would have full access to the server space._
+
+If you are using your personal computer running Linux / Mac OS, use the following command to mount LSS
 
 ```bash
 # LSS
@@ -49,10 +51,6 @@ mount -t cifs -o username=HawkID,sec=ntlm,domain=iowa,uid=$(id -u $(whoami)),gid
 ```
 
 Note that this uses the same CIFS protocol as the previous method (map as a folder). See FAQ below for details.
-
-## Access through the lab linux desktops
-
-If you use one of the lab provided linux desktops, once you log in, use the command line to navigate to `/mnt/nfs/lss_grelab`, and you would have full access to the server space.
 
 ## Access on HPC
 
@@ -66,7 +64,7 @@ Download a FTP client such as [FileZilla](https://filezilla-project.org/), and p
 
 1. In Linux/Mac OS, is the "map as a folder" the same as "command line mount"? Where are they in the file system?
 
-    They are the same in nature. But when "connect to server" in the GUI is used, the mount point in recent Linux versions (circa 2018, tested in Fedora+MATE and Ubuntu 16.04) is `/run/user/$UID/gvfs/`. When `mount` command is used, the user specifies the mount position. Since these are simply different "portal" for the same windows share, they should be synced.
+    The main difference between the two is that the former method uses GVfs (GNOME Virtual file system) as part of the GNU library while the latter uses the `mount` function in the kernel. When "connect to server" in the GUI is used, the mount point in recent Linux versions (circa 2018, tested in Fedora+MATE and Ubuntu 16.04) is `/run/user/$UID/gvfs/`. When `mount` command is used, the user specifies the mount position. Since these are simply different "portal" for the same windows share, they should be synced.
 
 # Appendix: additional servers, overview
 
@@ -74,7 +72,7 @@ There are two major lab servers, provided and managed by different departments a
 
 Below is a chart of comparison, also see [here](https://its.uiowa.edu/researchstorage)
 
-Table 1 Comparison of RDSS and LSSS
+**Table 2 Comparison of RDSS and LSSS**
 
 |  | RDSS | LSS |
 |--|--|--|
@@ -88,7 +86,7 @@ Table 1 Comparison of RDSS and LSSS
 | Contact person | Ryan West at ITS-ETM | John Sexton at <john-sexton@uiowa.edu> |
 | Request permission change | [RDSS Security change form](https://uiowa.qualtrics.com/SE/?SID=SV_8qyutD7sDdwnOoB) | email <hpc-sysadmins@iowa.uiowa.edu> |
 
-Table 2  RDSS mounting as a folder
+**Table 3  RDSS mounting as a folder**
 
 | OS | Menu item | Address |
 |----|--------|------|
