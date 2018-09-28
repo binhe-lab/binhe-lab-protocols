@@ -9,9 +9,9 @@ tags:
 Overview
 --------
 
-This template as well as many protocols in this repo are modified from the McClean lab's [OpenWetLab](https://openwetware.org/wiki/McClean:_Protocol_Template).
+This template as well as many protocols on this site are modified from the McClean lab's [OpenWetLab](https://openwetware.org/wiki/McClean:_Protocol_Template).
 
-This is a template for how to write a new protocol in the [GitHub repo](https://github.com/binhe-lab/lab-protocols) for our lab. Here is [how you can become a member of the lab on GitHub so as to clone and contribute to the protocols](). In your real protocol, a description of what the protocol is and when to use it would go here.
+This is a template for how to write a new protocol in the [GitHub repo](https://github.com/binhe-lab/lab-protocols) for our lab. Anyone affiliated without lab can contribute to this site. Here is [how](). In your real protocol, a description of what the protocol is and when to use it would go here.
 
 Materials
 ---------
