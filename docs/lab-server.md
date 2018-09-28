@@ -2,8 +2,10 @@
 title: Lab server How-To
 author: Bin He
 date: 2018-08-26
-categories: Basics
-tags: bioinfo
+categories: 
+ - Basics
+tags: 
+ - bioinfo
 ---
 
 # Function of lab servers
