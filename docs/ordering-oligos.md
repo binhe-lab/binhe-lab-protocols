@@ -16,11 +16,14 @@ In Benchling, you can design primers either using the "Assembly Wizard" or "Prim
 Protocol
 --------
 
-1.  Design your primers in Benchling.
-2.  Save your primers in a folder named "primer" under your project folder.
+1.  Design your primers in Benchling. 
+2.  If you used another tool, such as Primer 3 or Primer BLAST, please add the template as a DNA sequence into Benchling. You can then use the search function to select the primer you just designed, right click and select "create primer".
 3.  Double check the sequence to make sure that you get the correct strand, and have the right amount of overhang etc.
-4.  Once everything looks correct, open the oligo and navigate to "METADATA" tab. Find the "Schema" box and choose "Oligo" in the dropdown box. Fill in the project ID and any other information if you know them.
-5.  Click the "Register" button on the top. In the pop out window, select "Organization Collection" (you can leave the "My Collection" checked or unchecked, it's up to you). In the "Name and Registry ID Settings", choose "Generate new registry IDs". If there is no error, click Register. Now your oligos are registered into the lab database and you are ready to order using the oH numbers.
+4.  Once everything looks correct, open the oligo and navigate to "META DATA" tab. Find the "Schema" box and choose "Oligo" in the dropdown box. Fill in the project ID and any other information if you know them.
+5.  Click the "Register" button on the top. In the pop out window, select "My Collection". In the "Name and Registry ID Settings", choose "Generate new registry IDs" and then click Register. 
+6.  Check again to make sure everything looks correct. Now you can use the "change collection" button to register the primers into the "Organization Collection" and let the program "Generate new registry IDs". Now each oligo will get an oH number and is ready for ordering. If you don't have access to the IIHG-IDT site, stop here and give the oH# to Bin, who can order them for you. If you do have access, read on.
+7.  Go to registry/Organization Collection. Restrict "type" to "Oligo" and sort by ID/reverse alphanumerical order. Use the "->" button on the left to expand the left panel. Now you can use the checkbox on the left of each oligo to select the ones you want to order. Use the export function to export the oligos to the clipboard. Paste it into Excel. We will only use the first two columns, i.e. oligo name and oligo sequence in the actual ordering step.
+8.  Go to [IIHG](https://webapps1.healthcare.uiowa.edu/RAMS-DNACore/DNACore/Services/Oligo/IDT/SetupCart.aspx) oligo ordering site. Log in using your HawkID, and use the screen notification to navigate to the IDT website. Choose "Custom oligo" -> "Bulk Input" to enter your oligos. Double check and then submit.
 
 Notes
 -----
@@ -35,4 +38,4 @@ References
 Contact
 -------
 
--   **Bin He 12:51, 28 Sep 2018 (EDT)**
+-   **Bin He 12:51, 11 Oct 2018 (EDT)**
