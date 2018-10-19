@@ -3,7 +3,7 @@ title: Joining the lab
 author: Bin He
 date: 2018-10-04
 categories: 
- - Basics
+- Basics
 ---
 
 # Overview
