@@ -37,4 +37,3 @@ Please log on to the [EH&S training page](https://ehs.research.uiowa.edu/icon-sa
 
 - Biological Safety, General (W004BO)
     Will work with biological agents/materials?
-
