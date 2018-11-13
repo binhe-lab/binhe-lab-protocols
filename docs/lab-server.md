@@ -10,7 +10,10 @@ tags:
 
 # Function of lab servers
 
-All data produced in the lab, including raw data and analyses, should be stored on the lab server. The only exception is when the data and analyses are synced to the project [GitHub](https://github.com/binhe-lab) repository.
+The lab servers serve two functions:
+
+1. Allow users to transfer data from the shared computers in the Carver Center for Genomics (CCG) and Carver Center for Imaging (CCI).
+2. Store all data produced in the lab, including raw data and analyses. The only exception is when the data and analyses are synced to the project [GitHub](https://github.com/binhe-lab) repository.
 
 We have two storage servers available. LSS is used for remote computing on the Argon cluster. All other data transfer and storage uses RDSS.
 
@@ -28,6 +31,8 @@ The lab servers can be accessed by several means:
 
 RDSS is used for everything except for next generation sequencing data storage, analysis or other computation that requires access to the high performance computing cluster ([Argon](https://wiki.uiowa.edu/display/hpcdocs/Argon+Cluster))
 
+_Note: on CCG computers, chances are there is already a folder on the desktop under the name He, and there should be a shortcut inside that allows you to map the drive. If not, right click on the "Computer" icon and choose "Map Network Drive". Put in the address and credentials as shown below_
+
 **Table 1  RDSS mounting as a folder**
 
 | OS | Menu item | Address |
@@ -36,8 +41,9 @@ RDSS is used for everything except for next generation sequencing data storage, 
 | Linux | File manager -> Ctrl+l | smb://IOWA;HawkID@iowa.uiowa.edu/shared/researchdata/rdss_bhe2 |
 | Windows | [Instructions](https://its.uiowa.edu/support/article/102465) | \\\\iowa.uiowa.edu\shared\researchdata\rdss_bhe2 |
 
-- *replace "HawkID" with your actual HawkID, but don't change the "bhe2"s*
-- *Note that if you are off campus, you may need to be connected to the VPN client in order to gain access. Follow the instructions on this [article](https://its.uiowa.edu/support/article/1876)*
+- replace "HawkID" with your actual HawkID, but don't change the "bhe2"s
+- on Windows machines, you will need to choose "log in as a different user name", and append "IOWA\" before your HawkID.
+- if you are off campus, you may need to be connected to the VPN client in order to gain access. Follow the instructions on this [article](https://its.uiowa.edu/support/article/1876)
 
 
 This approach allows you to interact with the lab server as if it were an additional folder on your personal computer. Once it's connected, you will see the following folder structure:
@@ -100,7 +106,7 @@ mount -t cifs -o username=HawkID,domain=iowa,uid=$(id -u $(whoami)),gid=$(id -g 
 
     Below is a chart of comparison, also see [here](https://its.uiowa.edu/researchstorage)
 
-    **Table 2 Comparison of RDSS and LSSS**
+    **Table 3 Comparison of RDSS and LSSS**
      
     |  | RDSS | LSS |
     |--|--|--|
