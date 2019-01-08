@@ -11,7 +11,7 @@ Overview
 
 This template as well as many protocols on this site are modified from the McClean lab's [OpenWetLab](https://openwetware.org/wiki/McClean:_Protocol_Template).
 
-This is a template for how to write a new protocol in the [GitHub repo](https://github.com/binhe-lab/lab-protocols) for our lab. Anyone affiliated without lab can contribute to this site. Here is [how](). In your real protocol, a description of what the protocol is and when to use it would go here.
+This is a template for how to write a new protocol in the [GitHub repo](https://github.com/binhe-lab/lab-protocols) for our lab. Anyone affiliated with our lab can contribute to this site. Just ask Bin to add you to the lab GitHub group, and learn how to use either the GitHub website, or preferably, the command line interface, to add new files. In your real protocol, a description of what the protocol is and when to use it would go here.
 
 Materials
 ---------
