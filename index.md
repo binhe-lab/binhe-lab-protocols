@@ -14,6 +14,8 @@ To write a new protocol, follow [this template](docs/protocol-template)
 ## Basics
 - [Joining the lab](/docs/joining-lab)
 - [Ordering Oligos](/docs/ordering-oligos)
+
+## Informatics
 - [Connecting to lab servers](/docs/lab-server)
 
 ## Yeast
