@@ -48,7 +48,7 @@ _Note_
 | 1  uL | dNTPs 2mM each         |     |
 | 1  uL | Primer mixes, 5uM each |     |
 | .05uL | Taq DNAp, 5U/uL        |     |
-|   4uL | MilliQ water           |     |
+| 7  uL | MilliQ water           |     |
 
 ### PCR reaction mix using master mixes
 
