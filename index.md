@@ -20,3 +20,4 @@ To write a new protocol, follow [this template](docs/protocol-template)
 
 ## Yeast
 - [Colony PCR](/docs/yeast-colony-pcr)
+- [Yeast genetics must-read](/pdfs/2019-08-05-C-albicans-genetics-primer-MOMY19.pdf)
