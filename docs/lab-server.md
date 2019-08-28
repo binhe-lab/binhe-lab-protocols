@@ -61,13 +61,9 @@ This approach allows you to interact with the lab server as if it were an additi
 
 For work related to a specific project, use of the `Project` folder is preferred. For things that don't fall under a single project, use the folder under your name in the `User` folder.
 
-## Access LSS on HPC
-
-LSS is mounted automatically under `/Shared/grelab`
-
 ## Command line mounting
 
-_Note: If you use one of the lab provided linux desktops, once you log in, use the command line to navigate to `/mnt/nfs/lss_grelab`, and you would have full access to the server space._
+_Note: If you use one of the lab provided linux desktops, once you log in, use the command line to navigate to `/mnt/nfs/lss_grelab` for LSS and to `/mnt/cifs/rdss/rdss_bhe2` for RDSS, and you would have full access to the server space._
 
 If you are using your personal computer running Linux / Mac OS, use the following command to mount LSS
 
@@ -79,6 +75,10 @@ mount -t cifs -o username=HawkID,sec=ntlm,domain=iowa,uid=$(id -u $(whoami)),gid
 mount -t cifs -o username=HawkID,domain=iowa,uid=$(id -u $(whoami)),gid=$(id -g $(whoami)) //rdss.iowa.uiowa.edu/rdss_bhe2 /mnt/cifs/rdss_bhe2 
 # the additional uid and gid options are required so that the cifs client knows that these are the uid and gid for the user that matches the uid and gid on the server, which can be different.
 ```
+
+## Access LSS on HPC
+
+LSS is mounted automatically under `/Shared/grelab`
 
 ## FTP
 
